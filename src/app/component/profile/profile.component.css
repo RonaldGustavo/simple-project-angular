@@ -1,6 +1,6 @@
 .img_logo_company {
   width: 70%;
-  height: 300px;
+  height: 400px;
   display: flex;
   margin: auto;
   align-items: center;
@@ -14,6 +14,9 @@
 
 #profile {
   background-color: var(--primary-color);
+  min-height: 40vh;
+  display: grid;
+  align-items: center;
 }
 
 .profile-text {
