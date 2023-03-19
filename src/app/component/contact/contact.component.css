@@ -1,0 +1,41 @@
+#contact {
+  background-color: var(--primary-color);
+}
+
+.map {
+  width: 300px;
+  height: 300px;
+  float: right;
+  margin-right: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact_text {
+  margin: auto;
+}
+
+.icon-sosmed {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.fa-brands {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fa-linkedin {
+  color: blue;
+}
+
+.fa-instagram {
+  color: purple;
+}
+
+.fa-facebook {
+  color: blue;
+}

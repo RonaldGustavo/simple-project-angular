@@ -1,0 +1,16 @@
+.logo-company {
+  width: 45px;
+  height: 45px;
+}
+
+.navbar-brand {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+  font-size: 1.8rem;
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: 1.4rem;
+}

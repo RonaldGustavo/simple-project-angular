@@ -1,0 +1,26 @@
+<section id="testimonial">
+  <div class="container-fluid">
+    <h2 class="title_section">TESTIMONIAL</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col" *ngFor="let testimonial of testimonial">
+        <div class="card h-100 card-testimonial">
+          <img
+            [src]="testimonial.foto"
+            class="d-block img-testimonial"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title text-center">{{ testimonial.name }}</h5>
+            <p class="card-text"><b>Job: </b> {{ testimonial.job }}</p>
+            <p class="card-text">
+              <b>Description: </b> {{ testimonial.description }}
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">{{ testimonial.date }}</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

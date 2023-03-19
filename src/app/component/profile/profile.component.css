@@ -1,0 +1,40 @@
+.img_logo_company {
+  width: 70%;
+  height: 300px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-container-profile {
+  display: flex;
+  align-items: center;
+}
+
+#profile {
+  background-color: var(--primary-color);
+}
+
+.profile-text {
+  text-align: left;
+}
+
+.heading-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+.sub-heading-text {
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.description-text {
+  text-align: justify;
+  width: 90%;
+  line-height: 1.8;
+}

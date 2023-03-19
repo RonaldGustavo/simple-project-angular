@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+/* @import "~bootstrap/dist/css/bootstrap.css"; */
+
+:root {
+  --primary-color: #ecf2ff;
+  --secondary-color: #3e54ac;
+  --third-color: #655dbb;
+  --fourth-color: #bface2;
+}
+body {
+  background: linear-gradient(
+    to right bottom,
+    var(--secondary-color),
+    var(--fourth-color)
+  );
+}
+
+.container-main {
+  width: 100%;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.title_section {
+  text-align: center;
+  margin-bottom: 40px;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
