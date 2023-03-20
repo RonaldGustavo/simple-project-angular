@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 // component
 import { AppComponent } from './app.component';
@@ -10,7 +13,11 @@ import { CarouselComponent } from './component/carousel/carousel.component';
 import { ProfileComponent } from './component/profile/profile.component';
 import { TestimonialComponent } from './component/testimonial/testimonial.component';
 import { ContactComponent } from './component/contact/contact.component';
-import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+
+import { HomeComponent } from './views/home/home.component';
+import { LoginComponent } from './views/login/login.component';
+import { RegisterComponent } from './views/register/register.component';
+
 
 @NgModule({
   declarations: [
@@ -19,12 +26,19 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
     CarouselComponent,
     ProfileComponent,
     TestimonialComponent,
-    ContactComponent
+    ContactComponent,
+    HomeComponent,
+    LoginComponent,
+    RegisterComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LeafletModule
+    FormsModule,
+    HttpClientModule
+
+
 
   ],
   providers: [],

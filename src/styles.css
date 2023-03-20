@@ -13,10 +13,12 @@ body {
     var(--secondary-color),
     var(--fourth-color)
   );
+  min-height: 100vh;
 }
 
 .container-main {
   width: 100%;
+  min-height: 100vh;
 }
 
 section {
