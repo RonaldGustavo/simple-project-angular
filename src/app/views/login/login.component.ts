@@ -13,10 +13,10 @@ export class LoginComponent {
 
   constructor(private authService: AuthLogin, private router: Router) { }
 
-  onSubmit() {
+  handleLogin() {
     this.authService.login(this.email, this.password).subscribe(
       (response: any) => {
-        console.log(response)
+        console.log(response.messages)
         switch (response.status.code) {
           case 200:
             alert("Berhasil Login");

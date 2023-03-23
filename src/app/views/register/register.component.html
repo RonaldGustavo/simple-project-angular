@@ -35,6 +35,7 @@
                       id="form3Example1"
                       class="form-control"
                       name="firstName"
+                      [(ngModel)]="firstName"
                     />
                     <label class="form-label" for="form3Example1"
                       >First name</label
@@ -48,6 +49,7 @@
                       id="form3Example2"
                       class="form-control"
                       name="lastName"
+                      [(ngModel)]="lastName"
                     />
                     <label class="form-label" for="form3Example2"
                       >Last name</label
@@ -63,6 +65,7 @@
                   id="form3Example3"
                   class="form-control"
                   name="email"
+                  [(ngModel)]="email"
                 />
                 <label class="form-label" for="form3Example3"
                   >Email address</label
@@ -76,6 +79,7 @@
                   id="form3Example4"
                   class="form-control"
                   name="password"
+                  [(ngModel)]="password"
                 />
                 <label class="form-label" for="form3Example4">Password</label>
               </div>
@@ -87,6 +91,7 @@
                   id="form3Example4"
                   class="form-control"
                   name="displayName"
+                  [(ngModel)]="displayName"
                 />
                 <label class="form-label" for="form3Example4"
                   >Display Name</label
@@ -94,7 +99,11 @@
               </div>
 
               <!-- Submit button -->
-              <button type="submit" class="btn btn-primary btn-block mb-4">
+              <button
+                type="submit"
+                class="btn btn-primary btn-block mb-4"
+                (click)="handleRegister()"
+              >
                 Sign up
               </button>
             </form>
