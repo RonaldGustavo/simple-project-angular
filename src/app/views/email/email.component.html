@@ -1,0 +1,25 @@
+<div class="container-verify">
+  <div class="container-verify-main">
+    <div class="d-flex align-items-center mb-3 pb-1">
+      <img
+        src="../../../assets/logo-company-modified.png"
+        alt="logo-company"
+        class="logo-company"
+      />
+      <span class="h1 fw-bold mb-0">Kepepet</span>
+    </div>
+    <hr class="line-verify" />
+    <div class="card-verify">
+      <h2>Confirmation Email</h2>
+
+      <p>
+        Hello,{{ email }} Thank you for joining us in KEPEPET. Please confirm
+        your email by pressing the button below.
+      </p>
+      <button class="btn-verifikasi" (click)="handleVerify()">
+        Confirmation Your Email
+      </button>
+      <p>Thank You!</p>
+    </div>
+  </div>
+</div>
