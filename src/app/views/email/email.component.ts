@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthVerify } from 'src/app/service/authverify.service';
 import { ActivatedRoute } from '@angular/router';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-email',
@@ -13,7 +14,7 @@ export class EmailComponent implements OnInit {
   email: any = this.route.snapshot.queryParamMap.get('email')
 
   token: any = this.route.snapshot.queryParamMap.get('token')
-  constructor(private authVerify: AuthVerify, private router: Router, private route: ActivatedRoute) { }
+  constructor(private authVerify: AuthVerify, private router: Router, private route: ActivatedRoute, private cookieService: CookieService) { }
 
   ngOnInit() {
     if (!this.email && !this.token) {
@@ -27,6 +28,7 @@ export class EmailComponent implements OnInit {
         console.log(response);
         switch (response.status.code) {
           case 200:
+            this.cookieService.delete("authVerify")
             alert("Register Success!");
             this.router.navigate(['/']);
             break;

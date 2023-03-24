@@ -1,0 +1,11 @@
+/* Check email */
+.container-checkemail {
+  width: 90%;
+  min-height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e0ff;
+  border-radius: 10px;
+  box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.3);
+}

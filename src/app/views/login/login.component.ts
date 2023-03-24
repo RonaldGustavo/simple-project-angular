@@ -22,6 +22,7 @@ export class LoginComponent implements OnInit {
     if (tokenValue) {
       this.router.navigate(['/home']);
     }
+    this.cookieService.delete("authVerify")
   }
 
   handleLogin() {

@@ -14,3 +14,7 @@
   font-weight: 600;
   font-size: 1.4rem;
 }
+
+.nav_item:hover {
+  cursor: pointer;
+}

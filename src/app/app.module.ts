@@ -18,6 +18,7 @@ import { HomeComponent } from './views/home/home.component';
 import { LoginComponent } from './views/login/login.component';
 import { RegisterComponent } from './views/register/register.component';
 import { EmailComponent } from './views/email/email.component';
+import { CheckemailComponent } from './views/checkemail/checkemail.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { EmailComponent } from './views/email/email.component';
     LoginComponent,
     RegisterComponent,
     EmailComponent,
+    CheckemailComponent,
 
   ],
   imports: [

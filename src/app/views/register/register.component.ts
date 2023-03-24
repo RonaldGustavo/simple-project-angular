@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { RegisterService } from 'src/app/service/register.service';
 import { Router } from '@angular/router';
+import { CookieService } from 'ngx-cookie-service';
+
 
 @Component({
   selector: 'app-register',
@@ -14,7 +16,7 @@ export class RegisterComponent {
   password!: string
   displayName!: string
 
-  constructor(private registerService: RegisterService, private router: Router) { }
+  constructor(private registerService: RegisterService, private router: Router, private cookieService: CookieService) { }
 
   handleRegister() {
     this.registerService.register(this.firstName, this.lastName, this.email, this.password, this.displayName).subscribe(
@@ -22,11 +24,11 @@ export class RegisterComponent {
         console.log(response);
         switch (response.status.code) {
           case 200:
+            this.cookieService.set('authVerify', "verify");
             alert("verify your email");
-            this.router.navigate(['/']);
+
+            this.router.navigate(['/verify/checkemail']);
             break;
-
-
 
           default:
             break;
