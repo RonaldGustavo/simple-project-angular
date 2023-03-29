@@ -34,6 +34,7 @@ export class LoginComponent implements OnInit {
         switch (response.status.code) {
           case 200:
             alert("Berhasil Login");
+            localStorage.setItem("authLogin", this.token)
             this.cookieService.set('token', this.token);
             this.router.navigate(['/home']);
             break;

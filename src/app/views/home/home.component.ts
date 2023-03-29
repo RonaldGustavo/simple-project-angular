@@ -13,9 +13,16 @@ export class HomeComponent implements OnInit {
   constructor(private router: Router, private cookieService: CookieService) { }
   ngOnInit() {
     const tokenValue = this.cookieService.get('token');
+    const authLogin = localStorage.getItem("authLogin")
 
     if (!tokenValue) {
       this.router.navigate(["/"])
+    }
+    if (authLogin !== tokenValue) {
+      localStorage.removeItem("authLogin")
+      this.cookieService.delete("token")
+      this.router.navigate(["/"])
+
     }
   }
 

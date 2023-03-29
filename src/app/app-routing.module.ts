@@ -15,6 +15,8 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'verify/email', component: EmailComponent },
   { path: 'verify/checkemail', component: CheckemailComponent },
+  // redirect to login page when random path
+  { path: '**', redirectTo: "" }
 
 
 
