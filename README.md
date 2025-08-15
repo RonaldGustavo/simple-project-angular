@@ -9,7 +9,7 @@ Landing Page Website using Angular Framework
 
 Here is the UI:
 
-![UI Login](https://github.com/RonaldGustavo/valentine-card/blob/master/assets/valentine.png)
-![UI Register](https://github.com/RonaldGustavo/valentine-card/blob/master/assets/valentine.png)
-![UI Home 1](https://github.com/RonaldGustavo/valentine-card/blob/master/assets/valentine.png)
-![UI Home 2](https://github.com/RonaldGustavo/valentine-card/blob/master/assets/valentine.png)
+![UI Login](https://github.com/RonaldGustavo/simple-project-angular/blob/main/src/assets/login.png)
+![UI Register](https://github.com/RonaldGustavo/simple-project-angular/blob/main/src/assets/register.png)
+![UI Home 1](https://github.com/RonaldGustavo/simple-project-angular/blob/main/src/assets/home1.png)
+![UI Home 2](https://github.com/RonaldGustavo/simple-project-angular/blob/main/src/assets/home2.png)
